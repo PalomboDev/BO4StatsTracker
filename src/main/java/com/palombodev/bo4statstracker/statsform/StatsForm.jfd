@@ -1,0 +1,360 @@
+JFDML JFormDesigner: "6.0.5.0.178" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "panel3"
+			auxiliary() {
+				"JavaCodeGenerator.variableModifiers": 1
+			}
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabPane"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 1
+				}
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "connectionTab"
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "playerNameTextBox"
+						"foreground": sfield java.awt.Color gray
+						"toolTipText": "Insert Player Name Here"
+						"background": sfield java.awt.Color white
+						"text": "Insert player name here"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 125
+						"y": 85
+						"width": 235
+						"height": 22
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "playerNameLabel"
+						"text": "Player: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 0
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 40
+						"y": 195
+						"width": 235
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "updatingLabel"
+						"text": "Updates every 5 seconds"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 315
+						"y": 195
+						"width": 175
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "programNameLabel"
+						"text": "BO4 Stats Tracker - By PalomboDev"
+						"font": new java.awt.Font( "Tarzan", 0, 12 )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 125
+						"y": 40
+						"width": 240
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "selectPlayerButton"
+						"text": "Select Player"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selectPlayerButtonActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "selectPlayerButtonMouseEntered", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selectPlayerButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 175
+						"y": 110
+						"width": 140
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Connection"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "statsTab"
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "playerLabel"
+						"text": "Player: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 10
+						"y": 15
+						"width": 190
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "curWinStreakLael"
+						"text": "Current Win Streak: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 210
+						"y": 15
+						"width": 200
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "killsLabel"
+						"text": "Kills: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 140
+						"height": 16
+						"x": 10
+						"y": 75
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "meleesLabel"
+						"text": "Melees: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 150
+						"height": 16
+						"x": 210
+						"y": 165
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "ekiaLabel"
+						"text": "EKIA: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 135
+						"height": 16
+						"x": 10
+						"y": 60
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "deathsLabel"
+						"text": "Deaths: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 140
+						"height": 16
+						"x": 10
+						"y": 90
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "prestigeLabel"
+						"text": "Prestige: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 140
+						"height": 16
+						"x": 10
+						"y": 45
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "levelLabel"
+						"text": "Level: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 120
+						"height": 16
+						"x": 10
+						"y": 30
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "kdLabel"
+						"text": "KD: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 140
+						"height": 16
+						"x": 10
+						"y": 105
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "longestKillStreakLabel"
+						"text": "Longest Kill Streak: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 185
+						"height": 16
+						"x": 10
+						"y": 165
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "hitsLabel"
+						"text": "Hits: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 165
+						"height": 16
+						"x": 210
+						"y": 150
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "winsLabel"
+						"text": "Wins: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 140
+						"height": 16
+						"x": 10
+						"y": 120
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lossesLabel"
+						"text": "Losses: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 140
+						"height": 16
+						"x": 10
+						"y": 135
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "gamesPlayedLabel"
+						"text": "Games Played: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 165
+						"height": 16
+						"x": 10
+						"y": 150
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "totalShotsLabel"
+						"text": "Total Shots: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 210
+						"y": 30
+						"width": 140
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "teamKillsLabel"
+						"text": "Team Kills: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 210
+						"y": 45
+						"width": 130
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "suicidesLabel"
+						"text": "Suicides: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 210
+						"y": 60
+						"width": 135
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "killsConfirmedLabel"
+						"text": "Kills Confirmed: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 210
+						"y": 75
+						"width": 160
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "killsDeniedLabel"
+						"text": "Kills: Denied: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 210
+						"y": 90
+						"width": 140
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "capturesLabel"
+						"text": "Captures: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 210
+						"y": 105
+						"width": 175
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "defendsLabel"
+						"text": "Defends: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 210
+						"y": 120
+						"width": 135
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "timePlayedLabel"
+						"text": "Time Played: N/A"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 1
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 210
+						"y": 135
+						"width": 135
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Stats"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"width": 500
+				"height": 250
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 120, 150 )
+			"size": new java.awt.Dimension( 500, 250 )
+		} )
+	}
+}
